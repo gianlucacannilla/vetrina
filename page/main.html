@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Pulvirenti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ANTONIO PULVIRENTI</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Selected Work</a></li>
+            <li><a href="#representation">Representation</a></li>
+            <li><a href="#prints">Prints</a></li>
+        </ul>
+        <button class="close-menu" onclick="toggleMenu()">X</button>
+    </nav>
+    <div class="content-grid">
+        <div class="column">
+            <h2>Fashion project</h2>
+            <ul>
+                <li>Dolce & Gabbana Talent Campaign 2020</li>
+                <li>Triple RRR Styling & direction 2020-2021</li>
+                <li>Modes Art direction 2021</li>
+                <li>Vogue editorial 2021</li>
+                <li>Drew Talent 2021</li>
+                <li>GQ Tony Effe 2022</li>
+                <li>Emma Marrone for Louis Vuitton 2023</li>
+                <li>Vevo for Emma Marrone 2023</li>
+                <li>Hypebeast PDF campaign 2023</li>
+                <li>Dsquared2 Styling Campaign 2023</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Artist project</h2>
+            <ul>
+                <li>Tony Effe video Boss 2023</li>
+                <li>Tony Effe & Emma Marrone video Taxy sulla Luna 2023</li>
+                <li>Emma Marrone “Souvenir” Album 2023</li>
+                <li>Emma Marrone Campovolo 2023</li>
+                <li>Drillionaire video Bon Ton 2023</li>
+                <li>Drillionaire forum 2023</li>
+                <li>Rondo video Red & Blue 2023</li>
+                <li>Rondo Face 2 Face video 2024</li>
+                <li>Pyrex Panamera video 2024</li>
+                <li>Tedua Sanremo 2024</li>
+                <li>Tony Effe Icon Album 2024</li>
+                <li>Tony Effe video Carrara 2024</li>
+                <li>Rondo Blue Type cover 2024</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>©2024 Antonio Pulvirenti</p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function toggleMenu() {
+        document.querySelector('nav').classList.toggle('open');
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        var menuIcon = document.querySelector('.menu-icon');
+        var closeMenu = document.querySelector('.close-menu');
+        var nav = document.querySelector('nav');
+
+        menuIcon.addEventListener('click', function () {
+            nav.classList.add('open');
+        });
+
+        closeMenu.addEventListener('click', function () {
+            nav.classList.remove('open');
+        });
+    });
+</script>
