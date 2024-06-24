@@ -7,7 +7,7 @@
   <!-- This is Squarespace. --><!-- clarinet-yellow-5wcy -->
   <base href="">
   <meta charset="utf-8" />
-  <title>DOLCE GABBANA - 2022 </title>
+  <title>RONDO FACE 2 FACE VIDEO 2024</title>
   <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
   <link rel="icon" type="image/x-icon" media="(prefers-color-scheme: light)"
     href="https://images.squarespace-cdn.com/content/v1/65514b0e0ee46b1bfb61d565/145f1239-513e-4977-9263-330bcfd1fdb1/favicon.ico?format=100w" />
@@ -1328,7 +1328,8 @@
                       <div class="sqs-block-content">
 
                         <div class="sqs-html-content">
-                          <p style="text-align:center;white-space:pre-wrap;" class="">RONDO FACE 2 FACE VIDEO 2024</p>
+                          <p style="text-align:center;white-space:pre-wrap;" class="">RONDO FACE 2 FACE VIDEO 2024
+                          </p>
                         </div>
 
 
@@ -1457,99 +1458,77 @@
 
             </div>
           </div>
+
           <div class="content-wrapper">
             <style>
-              html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    .content-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      padding: 0;
-      margin: 0;
-    }
-    .content-wrapper .slider-container {
-      position: relative;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      overflow: hidden;
-    }
-    .content-wrapper .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 100%;
-      height: 100%;
-    }
-    .content-wrapper .slides img {
-      width: 100%;
-      height: auto;
-      max-height: 80vh; 
-      flex-shrink: 0;
-      object-fit: contain; 
-    }
-    .content-wrapper .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 10;
-    }
-    .content-wrapper .prev {
-      left: 10px;
-    }
-    .content-wrapper .next {
-      right: 10px;
-    }
-    @media (max-width: 1280px) {
-      .content-wrapper .slider-container {
-        max-width: 100%;
-        height: auto;
-      }
-      .content-wrapper .slides img {
-        max-height: 100vh;
-      }
-    }
-    @media (max-width: 600px) {
-      .content-wrapper {
-        padding: 0;
-        margin: 0;
-      }
-      .content-wrapper .slider-container {
-        width: 100%;
-        height: auto; 
-      }
-      .content-wrapper .slides img {
-        height: auto; 
-        max-height: 100vh; 
-        object-fit: contain; 
-      }
-      .content-wrapper .arrow {
-        padding: 5px;
-      }
-    }
+              html,
+              body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+              }
+
+              .content-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                font-family: Arial, sans-serif;
+                padding: 0;
+                margin: 0;
+              }
+
+              .content-wrapper .slider-container {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+              }
+
+              .content-wrapper .slides {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                width: 100%;
+                height: 100%;
+              }
+
+              .content-wrapper .slides iframe {
+                width: 100%;
+                height: 100%;
+                flex-shrink: 0;
+                object-fit: cover;
+              }
+
+              .content-wrapper .arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 10;
+              }
+
+              .content-wrapper .prev {
+                left: 10px;
+              }
+
+              .content-wrapper .next {
+                right: 10px;
+              }
             </style>
             <div class="content">
               <div class="slider-container">
                 <div class="slides">
-                  <img src="../../asset/artist_project/rondo_blue_type_cover_2024/image00005.jpeg"
-                    alt="Image 1">
-                    <img src="../../asset/artist_project/rondo_blue_type_cover_2024/image00013.jpeg"
-                    alt="Image 2">
-                    <img src="../../asset/artist_project/rondo_blue_type_cover_2024/image00014.jpeg"
-                    alt="Image 3">
-                    <img src="../../asset/artist_project/rondo_blue_type_cover_2024/image00015.jpeg"
-                    alt="Image 4">
+                  <iframe src="https://www.youtube.com/embed/aGkRdFkTNXw?si=sRnrjcZ0p0XDiFso"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <button class="arrow prev" onclick="changeSlide(-1)">&#10094;</button>
                 <button class="arrow next" onclick="changeSlide(1)">&#10095;</button>
@@ -1557,34 +1536,23 @@
             </div>
           </div>
 
-        </section>
+          <script>
+            let currentIndex = 0;
 
+            function changeSlide(direction) {
+              const slides = document.querySelector('.slides');
+              const totalSlides = slides.children.length;
+              currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+              const slideWidth = slides.children[0].offsetWidth;
+              slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+            }
 
-      </article>
-
-
-      <script>
-        let currentIndex = 0;
-
-        function changeSlide(direction) {
-          const slides = document.querySelector('.slides');
-          const totalSlides = slides.children.length;
-          currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-          const slideWidth = slides.children[0].offsetWidth;
-          slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-        }
-
-        window.addEventListener('resize', () => {
-          const slides = document.querySelector('.slides');
-          const slideWidth = slides.children[0].offsetWidth;
-          slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-        });
-      </script>
-
-
-
-
-
+            window.addEventListener('resize', () => {
+              const slides = document.querySelector('.slides');
+              const slideWidth = slides.children[0].offsetWidth;
+              slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+            });
+          </script>
 
 
     </main>
